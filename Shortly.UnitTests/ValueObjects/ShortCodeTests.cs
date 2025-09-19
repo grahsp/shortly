@@ -39,7 +39,7 @@ public class ShortCodeTests
         var input = new string('a', ShortCode.MaxLength);
         var shortCode = new ShortCode(input);
 
-        Assert.Equal(input, shortCode.ToString());       
+        Assert.Equal(input, shortCode.ToString());
     }
 
     [Fact]
