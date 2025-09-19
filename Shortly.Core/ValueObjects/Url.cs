@@ -14,7 +14,10 @@ public sealed record Url
     }
 
     private readonly Uri _uri;
+
+    public string ToNormalizedString()
+        => _uri.ToString().TrimEnd('/');
     
     public override string ToString()
-        => _uri.ToString().TrimEnd('/');
+        => _uri.ToString();
 }
